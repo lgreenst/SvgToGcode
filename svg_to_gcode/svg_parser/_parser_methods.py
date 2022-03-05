@@ -46,11 +46,11 @@ def _parse_length(length: str):
             elif unit_str == "pc":
                 scale_factor = 25.4/6.0
             elif unit_str == "px":
-                scale_factor = 25.4/96.0
+                scale_factor = 1
             else:
                 # Default to px
                 unit_str = "px"
-                scale_factor = 25.4/96.0
+                scale_factor = 1
     return number, scale_factor
 
 # Todo deal with viewBoxes
